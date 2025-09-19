@@ -49,5 +49,5 @@ jobs:
       - name: Deploy to Render
         run: |
           curl -s -X POST -H "Authorization: Bearer ${{ secrets.RENDER_API_KEY}}" -H "Content-Type: application/json" "https://api.render.com/v1/services/${{ secrets.RENDER_SERVICE_ID}}/deploys"
-        echo "Deployment triggered to:"
-        echo "https://${{ secrets.RENDER_SERVICE_ID}}.onrender.com"
+          echo "Deployment triggered to:"
+          echo "https://${{ secrets.RENDER_SERVICE_ID}}.onrender.com"
