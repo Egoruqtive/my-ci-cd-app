@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return "Hi!"
+    return "Hi! If you see it - Deployment is works!"
 
 @app.route('/health')
 def health():
